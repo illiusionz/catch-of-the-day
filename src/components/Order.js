@@ -9,7 +9,7 @@ class Order extends React.Component {
         const isAvailble = fish && fish.status === 'available';
 
         if(!fish) return null;
-
+        
         if(!isAvailble){
             return <li key={key}>Sorry {fish ? fish.name : 'fish' } is no longer avaiable! </li>;
         }
